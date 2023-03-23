@@ -1,0 +1,290 @@
+/* START OF SHARED STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Glass Antiqua', cursive;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+:root {
+    --main-color: #dc3545
+}
+::selection {
+    background-color: #dc3546af;
+    color: white;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+/* END OF SHARED STYLE */
+
+/* START OF THE LOADER */
+#loader {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+}
+
+.lds-heart div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: var(--main-color);
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.lds-heart div:after,
+.lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: var(--main-color);
+}
+
+.lds-heart div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+}
+
+.lds-heart div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+}
+
+@keyframes lds-heart {
+    0% {
+        transform: scale(0.95);
+    }
+
+    5% {
+        transform: scale(1.1);
+    }
+
+    39% {
+        transform: scale(0.85);
+    }
+
+    45% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+/* END OF THE LOADER */
+
+
+/* START OF HEADER STYLE */
+/* ---- particles.js container ---- */
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../imgs/00-story-BTS.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+.particles-js-canvas-el {
+    position: absolute;
+}
+
+/* START OF NAVBAR */
+.bi-justify {
+    font-size: 2.3rem;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+}
+
+.offcanvas.offcanvas-start {
+    width: 340px;
+}
+
+.offcanvas {
+    background-color: #b5b5b5;
+    color: var(--white-color)
+}
+
+.navbar-nav,
+.nav-link {
+    color: var(--white-color)
+}
+
+.navbar-nav .nav-link.active ,.nav-link:focus, .nav-link:hover{
+    color: var(--main-color);
+}
+
+.offcanvas-title{
+    font-size: 1.45rem;
+}
+.bi-x{
+    font-size: 1.56rem;
+}
+/* END OF NAVBAR */
+
+.header h1 {
+    font-size: 3rem;
+    font-family: 'Snowburst One', cursive;
+    margin-bottom: 60px;
+}
+
+.header span {
+    font-size: 1.6rem;
+}
+
+table {
+    margin: auto !important;
+    width: 98%;
+    margin-block: 35px;
+}
+
+table>tbody {
+    font-size: 1.56rem;
+    font-family: 'Nova Cut', cursive;
+    letter-spacing: 5px;
+    color: yellow;
+    font-weight: bolder;
+}
+
+tr {
+    margin-bottom: 15px;
+}
+
+.bg-layer {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* END OF HEADER STYLE */
+
+/* START OF OWL CAROUSEL, MORE DATA, COUNTDOWN  */
+.moreData{
+    display: none;
+}
+.item section span, #contact span{
+    font-family: 'Nova Cut', cursive;
+    font-size: 20px;
+}
+.course-countdown{
+    padding-block: 10px;
+}
+
+.course-countdown h3{
+	font-size:17px;
+	padding: 15px 13px;
+}
+
+.course-countdown ul{
+	padding-block:20px;
+}
+
+.course-countdown ul li{
+	margin:0 5px;
+	font-size:16px;
+}
+/* END OF OWL CAROUSEL, MORE DATA, COUNTDOWN  */
+
+/* START OF CONTACT US STYLE */
+.contact h2 {
+    font-family: 'Snowburst One', cursive;
+    margin-bottom: 35px;
+}
+
+.contact p,
+.contact li {
+    letter-spacing: 2px;
+}
+
+.contact li {
+    padding: 10px;
+}
+
+.social-media li i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--main-color);
+    width: 40px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.social-media i:hover {
+    background-color: var(--main-color);
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: var(--main-color);
+}
+
+/* END OF CONTACT US STYLE */
